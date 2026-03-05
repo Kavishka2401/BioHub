@@ -1,129 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioHub - Biological Excellence</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BioHub – Your Gateway to Biological Excellence</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">🧬 BioHub</div>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Resources</a>
-            <button class="portal-btn">Enroll Now</button>
-        </nav>
-    </header>
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">
+    <div class="logo-icon">
+        <img src="logo.png" alt="BioHub Logo">
+    </div>
+    BioHub - Mastering A/L Biology
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Biology Class</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Enrollment</a></li>
+    </ul>
+    <a href="#" class="btn-portal">Enroll Now</a>
+  </nav>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to <span>BioHub</span>:<br>Your Gateway to Biological Excellence</h1>
-                <p>Choose the modern way you control, in a biology-focused learning platform.</p>
-            </div>
-            <div class="hero-images">
-                <div class="img-large"></div>
-                <div class="img-grid">
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                </div>
-            </div>
-        </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to <span>BioHub</span>:<br>Your Gateway to Biological Excellence</h1>
+      <p>Choose a modern path you control — a biology-focused learning platform built for curious minds.</p>
+    </div>
+    <div class="hero-images">
+    <div class="hero-img-slot microscope">
+        <img src="microscope.jpeg" alt="Microscope view">
+    </div>
+    <div class="hero-img-slot leaf">
+        <img src="leaf-cell.jpg" alt="Leaf structure">
+    </div>
+    <div class="hero-img-slot cell">
+        <img src="dna-cell.jpg" alt="Cell biology">
+    </div>
+    </div>
+  </section>
 
-        <section class="class-section">
-            <h2>Biology Class: 10 Comprehensive Chapters & Unit Papers</h2>
-            <div class="chapter-grid">
-                
-                <div class="card" onclick="toggleChapter(this)">
-                    <div class="card-header">
-                        <div class="icon-circle">🧫</div>
-                        <span class="chapter-num">01</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Chapter 01: Cell Biology & Structure</h3>
-                        <p>Detailed notes, visual guides, and practice focused practical platforms</p>
-                        
-                        <div class="expanded-info">
-                            <h4 class="section-title">📄 UNIT PAPERS (1-5)</h4>
-                            <div class="list-item"><span>1</span> Paper 1: Introduction (PDF)</div>
-                            <div class="list-item"><span>2</span> Paper 2: The Cell Membrane (PDF)</div>
-                            <div class="list-item"><span>3</span> Paper 3: The Membrane (PDF)</div>
-                            <div class="list-item"><span>4</span> Paper 4: Practice Topics (PDF)</div>
-                            <div class="list-item"><span>5</span> Paper 5: Advanced Topics (PDF)</div>
-                            
-                            <h4 class="section-title">🧪 EXPERIMENTS</h4>
-                            <div class="list-item"><span>1</span> Exp 1: Observing Cells (Microscopy)</div>
-                            <div class="list-item"><span>2</span> Exp 2: Modeling DNA (Structure)</div>
-                        </div>
-                    </div>
-                </div>
+  <!-- CHAPTERS -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Biology Class: 10 Comprehensive Chapters<br>&amp; Unit Papers</h2>
+    </div>
+    <div class="chapters-grid">
 
-                <div class="card" onclick="toggleChapter(this)">
-                    <div class="card-header">
-                        <div class="icon-circle">🧬</div>
-                        <span class="chapter-num">02</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Chapter 02: Genetics & Inheritance</h3>
-                        <p>Detailed notes, visual guides, and practice focused practical platforms</p>
-                        <div class="expanded-info">
-                            <h4 class="section-title">📄 UNIT PAPERS (1-5)</h4>
-                            <div class="list-item"><span>1</span> Paper 1: DNA Basics (PDF)</div>
-                        </div>
-                    </div>
-                </div>
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header mid"><div class="card-icon">🔬</div><span class="card-num">01 & 02</span></div>
+        <div class="card-body">
+          <h3>Chapter 01 & 02: Chemical &amp; Cellular basis of life</h3>
+          <p>Detailed notes, visual guides, and practice focused practitions platforms</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Introduction (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: The Cell Membrane (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: The Membrane (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Practice Topics (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Advanced Topics (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Observing Cells (Microscopy)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Modeling DNA (Structure)</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
 
-                <div class="card" onclick="toggleChapter(this)">
-                    <div class="card-header">
-                        <div class="icon-circle">🫀</div>
-                        <span class="chapter-num">03</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Chapter 03: Human Physiology</h3>
-                        <p>Detailed notes, visual guides, and practice focused practical platforms</p>
-                        <div class="expanded-info">
-                            <h4 class="section-title">📄 UNIT PAPERS (1-5)</h4>
-                            <div class="list-item"><span>1</span> Paper 1: Organ Systems (PDF)</div>
-                        </div>
-                    </div>
-                </div>
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header teal"><div class="card-icon">🔎</div><span class="card-num">03</span></div>
+        <div class="card-body">
+          <h3>Chapter 03: Evolution &amp; diversity of organisms</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: DNA Basics (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Mendel's Laws (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Chromosomes (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Mutations (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Advanced Genetics (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Punnett Squares Lab</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Trait Inheritance Study</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
 
-            </div>
-        </section>
-    </main>
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header dark"><div class="card-icon">🌿</div><span class="card-num">04</span></div>
+        <div class="card-body">
+          <h3>Chapter 04: Plant form &amp; function</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Circulatory System (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Respiratory System (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Digestive System (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Nervous System (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Endocrine System (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Heart Rate Lab</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Lung Capacity Study</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header mid"><div class="card-icon">🫀</div><span class="card-num">05</span></div>
+        <div class="card-body">
+          <h3>Chapter 05: Animal form &amp; function</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Plant Structure (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Photosynthesis (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Transpiration (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Reproduction (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Plant Hormones (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Leaf Chromatography</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Germination Study</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header teal"><div class="card-icon">🧬</div><span class="card-num">06</span></div>
+        <div class="card-body">
+          <h3>Chapter 06: Genetics</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Ecosystems (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Food Chains (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Biomes (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Populations (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Conservation (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Local Habitat Survey</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Water Quality Test</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header dark"><div class="card-icon">🧫</div><span class="card-num">07</span></div>
+        <div class="card-body">
+          <h3>Chapter 07: Molecular Biology &amp; Recombinant DNA Technology</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Carbohydrates (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Proteins (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Lipids (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Enzymes (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Nucleic Acids (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Benedict's Test</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Enzyme Activity Lab</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header mid"><div class="card-icon">🍂</div><span class="card-num">08</span></div>
+        <div class="card-body">
+          <h3>Chapter 08: Environmental Biology</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Bacteria (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Viruses (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Fungi (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Protists (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Immunity (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Bacterial Culture Lab</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Microscope Slide Study</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header teal"><div class="card-icon">🦠</div><span class="card-num">09</span></div>
+        <div class="card-body">
+          <h3>Chapter 09: Microbiology</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Neurons (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Brain Regions (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Synapses (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Reflexes (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Senses (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Reflex Response Test</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Sensory Perception Lab</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-card" onclick="toggleCard(this)">
+        <div class="card-header dark"><div class="card-icon">🌍</div><span class="card-num">10</span></div>
+        <div class="card-body">
+          <h3>Chapter 10: Applied Biology</h3>
+          <p>Detailed notes, visual guides, and practice questions</p>
+          <div class="card-expanded-content">
+            <div class="unit-section-label">📄 Unit Papers (1–5)</div>
+            <ul class="papers-list">
+              <li><span class="paper-num">1</span><a href="#">Paper 1: Natural Selection (PDF)</a></li>
+              <li><span class="paper-num">2</span><a href="#">Paper 2: Fossil Record (PDF)</a></li>
+              <li><span class="paper-num">3</span><a href="#">Paper 3: Speciation (PDF)</a></li>
+              <li><span class="paper-num">4</span><a href="#">Paper 4: Classification (PDF)</a></li>
+              <li><span class="paper-num">5</span><a href="#">Paper 5: Human Evolution (PDF)</a></li>
+            </ul>
+            <div class="unit-section-label">✂️ Experiments</div>
+            <ul class="exp-list">
+              <li><span class="paper-num">1</span><a href="#">Exp 1: Fossil Comparison Study</a></li>
+              <li><span class="paper-num">2</span><a href="#">Exp 2: Biodiversity Survey</a></li>
+            </ul>
+            <button class="card-close-btn" onclick="closeCard(event, this)">✕ Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
     <footer>
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p>📍 30 Contacts Info, CA 27150</p>
-                    <p>📞 +1 (123) 456-7890</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Social Links</h4>
-                    <a href="#">About Us</a>
-                    <a href="#">Team Links</a>
-                    <a href="#">Biology</a>
-                </div>
-                <div class="footer-col branding">
-                    <div class="logo">🧬 BioHub</div>
-                    <p>Cultivating Curiosity in Life Sciences</p>
-                </div>
+    <div class="footer-grid">
+        <div class="footer-col footer-brand">
+        <div class="footer-logo">
+            <div class="footer-logo-icon">
+                <img src="logo.png" alt="Logo" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
             </div>
+            BioHub
+        </div>
+        <p class="footer-tagline">Cultivating Curiosity<br>in Life Sciences</p>
+        </div>
+
+        <div class="footer-col">
+        <h4>Social Links</h4>
+        <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Teams Links</a></li>
+            <li><a href="#">Biology</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+            <span class="icon">📩</span>
+            <span>biohub.kb@gmail.com</span>
+        </div>
+        <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+94 707025407</span>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom">Cultivating Curiosity in Life Sciences &nbsp;·&nbsp; © 2025 BioHub. All rights reserved.</div>
     </footer>
 
-    <script>
-        function toggleChapter(cardElement) {
-            // Toggle the 'active' class on the clicked card
-            cardElement.classList.toggle('active');
-        }
-    </script>
-
+  <script>
+    function toggleCard(card) {
+      const isExpanded = card.classList.contains('expanded');
+      document.querySelectorAll('.chapter-card.expanded').forEach(c => c.classList.remove('expanded'));
+      if (!isExpanded) {
+        card.classList.add('expanded');
+        setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+      }
+    }
+    function closeCard(e, btn) {
+      e.stopPropagation();
+      btn.closest('.chapter-card').classList.remove('expanded');
+    }
+  </script>
 </body>
 </html>
