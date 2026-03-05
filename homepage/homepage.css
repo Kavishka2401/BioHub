@@ -1,0 +1,217 @@
+:root {
+    --primary-dark: #1a4332;
+    --accent-green: #2d6a4f;
+    --mint-bg: #e8f5f0;
+    --item-bg: #c9e9dc;
+    --white: #ffffff;
+    --text-dark: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    font-size: 0.9rem;
+}
+
+nav a.active {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.portal-btn {
+    background-color: var(--primary-dark);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero-content span {
+    color: #74c69d;
+}
+
+.hero-images {
+    display: flex;
+    gap: 10px;
+}
+
+.img-large {
+    width: 150px;
+    height: 200px;
+    background: #444;
+    border-radius: 40px;
+}
+
+/* Chapter Grid - Fixed to 3 columns */
+.class-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 per line */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+    background-color: var(--mint-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card-header {
+    background-color: var(--accent-green);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-circle {
+    background: rgba(0,0,0,0.15);
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chapter-num {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    color: #444;
+}
+
+/* EXPANDING LOGIC */
+.expanded-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; /* Controls the slide speed */
+}
+
+/* When the card has the .active class (added by JS) */
+.card.active .expanded-info {
+    max-height: 1000px; 
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 0.85rem;
+    margin: 15px 0 10px;
+    color: var(--primary-dark);
+}
+
+.list-item {
+    background: var(--item-bg);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.list-item span {
+    background: var(--accent-green);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-dark);
+    color: white;
+    padding: 50px 8%;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    color: #74c69d;
+}
+
+.footer-col p, .footer-col a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioHub - Biological Excellence</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">🧬 BioHub</div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Resources</a>
+            <button class="portal-btn">Enroll Now</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <span>BioHub</span>:<br>Your Gateway to Biological Excellence</h1>
+                <p>Choose the modern way you control, in a biology-focused learning platform.</p>
+            </div>
+            <div class="hero-images">
+                <div class="img-large"></div>
+                <div class="img-grid">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="class-section">
+            <h2>Biology Class: 10 Comprehensive Chapters & Unit Papers</h2>
+            <div class="chapter-grid">
+                
+                <div class="card" onclick="toggleChapter(this)">
+                    <div class="card-header">
+                        <div class="icon-circle">🧫</div>
+                        <span class="chapter-num">01</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chapter 01: Cell Biology & Structure</h3>
+                        <p>Detailed notes, visual guides, and practice focused practical platforms</p>
+                        
+                        <div class="expanded-info">
+                            <h4 class="section-title">📄 UNIT PAPERS (1-5)</h4>
+                            <div class="list-item"><span>1</span> Paper 1: Introduction (PDF)</div>
+                            <div class="list-item"><span>2</span> Paper 2: The Cell Membrane (PDF)</div>
+                            <div class="list-item"><span>3</span> Paper 3: The Membrane (PDF)</div>
+                            <div class="list-item"><span>4</span> Paper 4: Practice Topics (PDF)</div>
+                            <div class="list-item"><span>5</span> Paper 5: Advanced Topics (PDF)</div>
+                            
+                            <h4 class="section-title">🧪 EXPERIMENTS</h4>
+                            <div class="list-item"><span>1</span> Exp 1: Observing Cells (Microscopy)</div>
+                            <div class="list-item"><span>2</span> Exp 2: Modeling DNA (Structure)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleChapter(this)">
+                    <div class="card-header">
+                        <div class="icon-circle">🧬</div>
+                        <span class="chapter-num">02</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chapter 02: Genetics & Inheritance</h3>
+                        <p>Detailed notes, visual guides, and practice focused practical platforms</p>
+                        <div class="expanded-info">
+                            <h4 class="section-title">📄 UNIT PAPERS (1-5)</h4>
+                            <div class="list-item"><span>1</span> Paper 1: DNA Basics (PDF)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleChapter(this)">
+                    <div class="card-header">
+                        <div class="icon-circle">🫀</div>
+                        <span class="chapter-num">03</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chapter 03: Human Physiology</h3>
+                        <p>Detailed notes, visual guides, and practice focused practical platforms</p>
+                        <div class="expanded-info">
+                            <h4 class="section-title">📄 UNIT PAPERS (1-5)</h4>
+                            <div class="list-item"><span>1</span> Paper 1: Organ Systems (PDF)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>📍 30 Contacts Info, CA 27150</p>
+                    <p>📞 +1 (123) 456-7890</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Links</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Team Links</a>
+                    <a href="#">Biology</a>
+                </div>
+                <div class="footer-col branding">
+                    <div class="logo">🧬 BioHub</div>
+                    <p>Cultivating Curiosity in Life Sciences</p>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function toggleChapter(cardElement) {
+            // Toggle the 'active' class on the clicked card
+            cardElement.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
